@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+
+        <a href="page2.html">
+        <button style="font-size: 25px; background-color: gray; color:lightblue; border-radius: 25px;">click me</button>
+        </a>
+
+        <!-- a bit of JavaScript-->
+
+        <button onclick="doSomething()" style="font-size: 25px; background-color: gray; color:lightblue; border-radius: 25px;">click me 2</button>
+        
+        <p id="greeting">Hello</p>
+        
+        <script>
+            function doSomething() {
+                document.getElementById("greeting").innerHTML = "Goodbye"
+            }
+        </script>
+    </body>
+</html>
