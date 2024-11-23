@@ -1,16 +1,20 @@
-#box1{
+.gallery{
+    display: inline-block;
+    border: 1px solid lightgrey;
+    margin: 5px;
     width: 200px;
-    height: 200px;
-    background-color: rgb(43, 162, 217);
-    position: static;
-    top: 0px;
 }
 
-#box2{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 0, 0);
-    position: absolute;
-    top: 50px;
-    left: 50px;
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover{
+    border: 1px solid darkblue;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
 }

@@ -1,16 +1,47 @@
-#box1{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(43, 162, 217);
-    position: static;
-    top: 0px;
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;;
+}
+header{
+    background-color: rgb(165, 160, 160);
+    text-align: center;
+    padding: 25px;
 }
 
-#box2{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 0, 0);
-    position: absolute;
-    top: 50px;
-    left: 50px;
+.navbar{
+    background-color: rgb(36, 29, 29);
+    height: 50px;
+}
+
+aside{
+    width: 20%;
+    float: left;
+    padding: 10ox;
+}
+
+section{
+    width: 40%;
+    float: left;
+    padding: 10ox;
+}
+
+article{
+    width: 40%;
+    float: left;
+    padding: 10ox;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: rgb(165, 160, 160);
+    text-align: center;
+    padding: 25px;
+}
+@media screen and (max-width:600px) {
+    aside, section, article{
+        width: 100%;
+    }
 }

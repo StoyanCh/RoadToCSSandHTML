@@ -1,16 +1,30 @@
-#box1{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(43, 162, 217);
-    position: static;
-    top: 0px;
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+P::first-line{
+    background-color: rgb(249, 249, 126);
+}
+P::selection{
+    color: green;
+    background-color: darkgray;
 }
 
-#box2{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 0, 0);
-    position: absolute;
-    top: 50px;
-    left: 50px;
+
+#apple::after{
+    content: "🍎";
+}
+
+#orange::after{
+    content: "🍊";
+}
+
+#banana::after{
+    content: "🍌";
+}
+
+#fruit li::marker{
+    content: "✅";
+    color: greenyellow;
+    font-size: 1.2em;
 }
